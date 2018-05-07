@@ -39,8 +39,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Acorn Master Cartridge Breakout"
-Date "2018-05-05"
-Rev "1_0"
+Date "2018-05-07"
+Rev "1_1"
 Comp "https://www.waitingforfriday.com"
 Comment1 "(c)2018 Simon Inns"
 Comment2 "License: Attribution-ShareAlike 4.0 (CC BY-SA 4.0)"
@@ -50,84 +50,71 @@ $EndDescr
 $Comp
 L AcornCartridgeEdgeConnector J4
 U 1 1 5AED7120
-P 4700 2700
-F 0 "J4" H 5200 1450 60  0000 C CNN
-F 1 "AcornCartridgeEdgeConnector" V 4450 3150 60  0000 C CNN
-F 2 "Acorn Cartridge edge-connector:Acorn_Cartridge" H 4700 2700 60  0001 C CNN
-F 3 "" H 4700 2700 60  0001 C CNN
-	1    4700 2700
+P 4700 2800
+F 0 "J4" H 5200 1550 60  0000 C CNN
+F 1 "AcornCartridgeEdgeConnector" V 4450 3250 60  0000 C CNN
+F 2 "Acorn Cartridge edge-connector:Acorn_Cartridge" H 4700 2800 60  0001 C CNN
+F 3 "" H 4700 2800 60  0001 C CNN
+	1    4700 2800
 	1    0    0    -1  
 $EndComp
 $Comp
 L +5V #PWR01
 U 1 1 5AED7161
-P 4700 1100
-F 0 "#PWR01" H 4700 950 50  0001 C CNN
-F 1 "+5V" H 4700 1240 50  0000 C CNN
-F 2 "" H 4700 1100 50  0001 C CNN
-F 3 "" H 4700 1100 50  0001 C CNN
-	1    4700 1100
+P 4600 900
+F 0 "#PWR01" H 4600 750 50  0001 C CNN
+F 1 "+5V" H 4600 1040 50  0000 C CNN
+F 2 "" H 4600 900 50  0001 C CNN
+F 3 "" H 4600 900 50  0001 C CNN
+	1    4600 900 
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR02
 U 1 1 5AED7177
-P 4700 4300
-F 0 "#PWR02" H 4700 4050 50  0001 C CNN
-F 1 "GND" H 4700 4150 50  0000 C CNN
-F 2 "" H 4700 4300 50  0001 C CNN
-F 3 "" H 4700 4300 50  0001 C CNN
-	1    4700 4300
+P 4700 4400
+F 0 "#PWR02" H 4700 4150 50  0001 C CNN
+F 1 "GND" H 4700 4250 50  0000 C CNN
+F 2 "" H 4700 4400 50  0001 C CNN
+F 3 "" H 4700 4400 50  0001 C CNN
+	1    4700 4400
 	1    0    0    -1  
 $EndComp
 $Comp
 L GNDA #PWR03
 U 1 1 5AED718D
-P 6500 4000
-F 0 "#PWR03" H 6500 3750 50  0001 C CNN
-F 1 "GNDA" H 6500 3850 50  0000 C CNN
-F 2 "" H 6500 4000 50  0001 C CNN
-F 3 "" H 6500 4000 50  0001 C CNN
-	1    6500 4000
+P 6500 4100
+F 0 "#PWR03" H 6500 3850 50  0001 C CNN
+F 1 "GNDA" H 6500 3950 50  0000 C CNN
+F 2 "" H 6500 4100 50  0001 C CNN
+F 3 "" H 6500 4100 50  0001 C CNN
+	1    6500 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 1300 4600 1200
+	4600 4200 4600 4300
 Wire Wire Line
-	4600 1200 5100 1200
+	4600 4300 5100 4300
 Wire Wire Line
-	4700 1200 4700 1100
+	4700 4300 4700 4400
 Wire Wire Line
-	4800 1200 4800 1300
-Connection ~ 4700 1200
+	4800 4300 4800 4200
+Connection ~ 4700 4300
 Wire Wire Line
-	4600 4100 4600 4200
+	5450 3600 6500 3600
 Wire Wire Line
-	4600 4200 5100 4200
-Wire Wire Line
-	4700 4200 4700 4300
-Wire Wire Line
-	4800 4200 4800 4100
-Connection ~ 4700 4200
-Wire Wire Line
-	5450 3500 6500 3500
-Wire Wire Line
-	6500 3500 6500 4000
+	6500 3600 6500 4100
 $Comp
 L -5V #PWR11
 U 1 1 5AED7288
-P 5550 4000
-F 0 "#PWR11" H 5550 4100 50  0001 C CNN
-F 1 "-5V" H 5550 4150 50  0000 C CNN
-F 2 "" H 5550 4000 50  0001 C CNN
-F 3 "" H 5550 4000 50  0001 C CNN
-	1    5550 4000
+P 5550 5000
+F 0 "#PWR11" H 5550 5100 50  0001 C CNN
+F 1 "-5V" H 5550 5150 50  0000 C CNN
+F 2 "" H 5550 5000 50  0001 C CNN
+F 3 "" H 5550 5000 50  0001 C CNN
+	1    5550 5000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5450 3800 5850 3800
-Wire Wire Line
-	5550 3800 5550 4000
 $Comp
 L Conn_02x05_Odd_Even J1
 U 1 1 5AED73CD
@@ -139,21 +126,21 @@ F 3 "" H 2000 1500 50  0001 C CNN
 	1    2000 1500
 	1    0    0    -1  
 $EndComp
-Text GLabel 3950 1600 0    60   Input ~ 0
-Edge_D0
 Text GLabel 3950 1700 0    60   Input ~ 0
-Edge_D1
+Edge_D0
 Text GLabel 3950 1800 0    60   Input ~ 0
-Edge_D2
+Edge_D1
 Text GLabel 3950 1900 0    60   Input ~ 0
-Edge_D3
+Edge_D2
 Text GLabel 3950 2000 0    60   Input ~ 0
-Edge_D4
+Edge_D3
 Text GLabel 3950 2100 0    60   Input ~ 0
-Edge_D5
+Edge_D4
 Text GLabel 3950 2200 0    60   Input ~ 0
-Edge_D6
+Edge_D5
 Text GLabel 3950 2300 0    60   Input ~ 0
+Edge_D6
+Text GLabel 3950 2400 0    60   Input ~ 0
 Edge_D7
 Text GLabel 1800 1300 0    60   Input ~ 0
 Edge_D0
@@ -182,33 +169,33 @@ F 3 "" H 2000 2700 50  0001 C CNN
 	1    2000 2700
 	1    0    0    -1  
 $EndComp
-Text GLabel 3950 2500 0    60   Input ~ 0
-Edge_A0
 Text GLabel 3950 2600 0    60   Input ~ 0
-Edge_A1
+Edge_A0
 Text GLabel 3950 2700 0    60   Input ~ 0
-Edge_A2
+Edge_A1
 Text GLabel 3950 2800 0    60   Input ~ 0
-Edge_A3
+Edge_A2
 Text GLabel 3950 2900 0    60   Input ~ 0
-Edge_A4
+Edge_A3
 Text GLabel 3950 3000 0    60   Input ~ 0
-Edge_A5
+Edge_A4
 Text GLabel 3950 3100 0    60   Input ~ 0
-Edge_A6
+Edge_A5
 Text GLabel 3950 3200 0    60   Input ~ 0
-Edge_A7
+Edge_A6
 Text GLabel 3950 3300 0    60   Input ~ 0
-Edge_A8
+Edge_A7
 Text GLabel 3950 3400 0    60   Input ~ 0
-Edge_A9
+Edge_A8
 Text GLabel 3950 3500 0    60   Input ~ 0
-Edge_A10
+Edge_A9
 Text GLabel 3950 3600 0    60   Input ~ 0
-Edge_A11
+Edge_A10
 Text GLabel 3950 3700 0    60   Input ~ 0
-Edge_A12
+Edge_A11
 Text GLabel 3950 3800 0    60   Input ~ 0
+Edge_A12
+Text GLabel 3950 3900 0    60   Input ~ 0
 Edge_A13
 Text GLabel 1800 2400 0    60   Input ~ 0
 Edge_A0
@@ -249,37 +236,37 @@ F 3 "" H 2000 4150 50  0001 C CNN
 	1    2000 4150
 	1    0    0    -1  
 $EndComp
-Text GLabel 5450 1600 2    60   Input ~ 0
-Edge_PHI2
 Text GLabel 5450 1700 2    60   Input ~ 0
+Edge_PHI2
+Text GLabel 5450 1800 2    60   Input ~ 0
 Edge_8/16MHZ
-Text GLabel 5450 1900 2    60   Input ~ 0
-Edge_CS_R/~W
 Text GLabel 5450 2000 2    60   Input ~ 0
-Edge_R/~W~_~RDY
+Edge_CS_R/~W
 Text GLabel 5450 2100 2    60   Input ~ 0
-Edge_~PGFC
+Edge_R/~W~_~RDY
 Text GLabel 5450 2200 2    60   Input ~ 0
+Edge_~PGFC
+Text GLabel 5450 2300 2    60   Input ~ 0
 Edge_~PGFD
-Text GLabel 5450 2400 2    60   Input ~ 0
-Edge_~RST
 Text GLabel 5450 2500 2    60   Input ~ 0
-Edge_~NMI
+Edge_~RST
 Text GLabel 5450 2600 2    60   Input ~ 0
+Edge_~NMI
+Text GLabel 5450 2700 2    60   Input ~ 0
 Edge_~IRQ
-Text GLabel 5450 2800 2    60   Input ~ 0
-Edge_ROM_~OE
 Text GLabel 5450 2900 2    60   Input ~ 0
-Edge_~CSYNC~/~MADET
+Edge_ROM_~OE
 Text GLabel 5450 3000 2    60   Input ~ 0
-Edge_ROM_~QA
+Edge_~CSYNC~/~MADET
 Text GLabel 5450 3100 2    60   Input ~ 0
-Edge_ROM~STB~/CRTC~RST
+Edge_ROM_~QA
 Text GLabel 5450 3200 2    60   Input ~ 0
+Edge_ROM~STB~/CRTC~RST
+Text GLabel 5450 3300 2    60   Input ~ 0
 Edge_~OE2~/~LPSTB
-Text GLabel 5450 3400 2    60   Input ~ 0
+Text GLabel 5450 3500 2    60   Input ~ 0
 Edge_ADOUT
-Text GLabel 5450 3600 2    60   Input ~ 0
+Text GLabel 5450 3700 2    60   Input ~ 0
 Edge_ADIN/SPEECH
 Text GLabel 1800 3750 0    60   Input ~ 0
 Edge_PHI2
@@ -702,59 +689,129 @@ Wire Notes Line
 $Comp
 L PWR_FLAG #FLG011
 U 1 1 5AED9786
-P 5100 1100
-F 0 "#FLG011" H 5100 1175 50  0001 C CNN
-F 1 "PWR_FLAG" H 5100 1250 50  0000 C CNN
-F 2 "" H 5100 1100 50  0001 C CNN
-F 3 "" H 5100 1100 50  0001 C CNN
-	1    5100 1100
+P 4200 1200
+F 0 "#FLG011" H 4200 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 4200 1350 50  0000 C CNN
+F 2 "" H 4200 1200 50  0001 C CNN
+F 3 "" H 4200 1200 50  0001 C CNN
+	1    4200 1200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 1200 5100 1100
-Connection ~ 4800 1200
 $Comp
 L PWR_FLAG #FLG012
 U 1 1 5AED9839
-P 5100 4300
-F 0 "#FLG012" H 5100 4375 50  0001 C CNN
-F 1 "PWR_FLAG" H 5100 4450 50  0000 C CNN
-F 2 "" H 5100 4300 50  0001 C CNN
-F 3 "" H 5100 4300 50  0001 C CNN
-	1    5100 4300
+P 5100 4400
+F 0 "#FLG012" H 5100 4475 50  0001 C CNN
+F 1 "PWR_FLAG" H 5100 4550 50  0000 C CNN
+F 2 "" H 5100 4400 50  0001 C CNN
+F 3 "" H 5100 4400 50  0001 C CNN
+	1    5100 4400
 	-1   0    0    1   
 $EndComp
 $Comp
 L PWR_FLAG #FLG013
 U 1 1 5AED986C
-P 5850 4000
-F 0 "#FLG013" H 5850 4075 50  0001 C CNN
-F 1 "PWR_FLAG" H 5850 4150 50  0000 C CNN
-F 2 "" H 5850 4000 50  0001 C CNN
-F 3 "" H 5850 4000 50  0001 C CNN
-	1    5850 4000
-	-1   0    0    1   
+P 5800 4100
+F 0 "#FLG013" H 5800 4175 50  0001 C CNN
+F 1 "PWR_FLAG" H 5800 4250 50  0000 C CNN
+F 2 "" H 5800 4100 50  0001 C CNN
+F 3 "" H 5800 4100 50  0001 C CNN
+	1    5800 4100
+	1    0    0    -1  
 $EndComp
 $Comp
 L PWR_FLAG #FLG014
 U 1 1 5AED9895
-P 6300 4150
-F 0 "#FLG014" H 6300 4225 50  0001 C CNN
-F 1 "PWR_FLAG" H 6300 4300 50  0000 C CNN
-F 2 "" H 6300 4150 50  0001 C CNN
-F 3 "" H 6300 4150 50  0001 C CNN
-	1    6300 4150
+P 6300 4250
+F 0 "#FLG014" H 6300 4325 50  0001 C CNN
+F 1 "PWR_FLAG" H 6300 4400 50  0000 C CNN
+F 2 "" H 6300 4250 50  0001 C CNN
+F 3 "" H 6300 4250 50  0001 C CNN
+	1    6300 4250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5100 4200 5100 4300
-Connection ~ 4800 4200
+	5100 4300 5100 4400
+Connection ~ 4800 4300
 Wire Wire Line
-	5850 3800 5850 4000
-Connection ~ 5550 3800
+	6300 4250 6300 4000
 Wire Wire Line
-	6300 4150 6300 3900
+	6300 4000 6500 4000
+Connection ~ 6500 4000
+$Comp
+L Polyfuse F1
+U 1 1 5AEFF37D
+P 4600 1150
+F 0 "F1" V 4500 1150 50  0000 C CNN
+F 1 "Polyfuse" V 4700 1150 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 4650 950 50  0001 L CNN
+F 3 "" H 4600 1150 50  0001 C CNN
+	1    4600 1150
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6300 3900 6500 3900
-Connection ~ 6500 3900
+	4600 1300 4600 1400
+Wire Wire Line
+	4200 1350 4800 1350
+Connection ~ 4600 1350
+Wire Wire Line
+	4600 900  4600 1000
+$Comp
+L Polyfuse F2
+U 1 1 5AEFF88A
+P 5550 4700
+F 0 "F2" V 5450 4700 50  0000 C CNN
+F 1 "Polyfuse" V 5650 4700 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 5600 4500 50  0001 L CNN
+F 3 "" H 5550 4700 50  0001 C CNN
+	1    5550 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3900 5550 4550
+Wire Wire Line
+	5550 4850 5550 5000
+Wire Wire Line
+	4600 950  5000 950 
+Connection ~ 4600 950 
+Wire Wire Line
+	4200 1350 4200 1200
+Wire Wire Line
+	5450 3900 5550 3900
+Wire Wire Line
+	5800 4100 5800 4200
+Wire Wire Line
+	5800 4200 5550 4200
+Connection ~ 5550 4200
+$Comp
+L PWR_FLAG #FLG015
+U 1 1 5AF001E5
+P 5000 900
+F 0 "#FLG015" H 5000 975 50  0001 C CNN
+F 1 "PWR_FLAG" H 5000 1050 50  0000 C CNN
+F 2 "" H 5000 900 50  0001 C CNN
+F 3 "" H 5000 900 50  0001 C CNN
+	1    5000 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 950  5000 900 
+$Comp
+L PWR_FLAG #FLG016
+U 1 1 5AF002FB
+P 5100 4800
+F 0 "#FLG016" H 5100 4875 50  0001 C CNN
+F 1 "PWR_FLAG" H 5100 4950 50  0000 C CNN
+F 2 "" H 5100 4800 50  0001 C CNN
+F 3 "" H 5100 4800 50  0001 C CNN
+	1    5100 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4900 5100 4800
+Wire Wire Line
+	4800 1350 4800 1400
+Wire Wire Line
+	5100 4900 5550 4900
+Connection ~ 5550 4900
 $EndSCHEMATC
