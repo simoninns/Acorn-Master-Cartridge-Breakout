@@ -39,8 +39,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Acorn Master Cartridge Breakout"
-Date "2018-05-07"
-Rev "1_1"
+Date "2018-05-19"
+Rev "1_2"
 Comp "https://www.waitingforfriday.com"
 Comment1 "(c)2018 Simon Inns"
 Comment2 "License: Attribution-ShareAlike 4.0 (CC BY-SA 4.0)"
@@ -148,8 +148,6 @@ Text GLabel 2300 1300 2    60   Input ~ 0
 Edge_D1
 Text GLabel 1800 1400 0    60   Input ~ 0
 Edge_D2
-Text GLabel 2300 1400 2    60   Input ~ 0
-Edge_D3
 Text GLabel 1800 1500 0    60   Input ~ 0
 Edge_D4
 Text GLabel 2300 1500 2    60   Input ~ 0
@@ -743,7 +741,7 @@ L Polyfuse F1
 U 1 1 5AEFF37D
 P 4600 1150
 F 0 "F1" V 4500 1150 50  0000 C CNN
-F 1 "Polyfuse" V 4700 1150 50  0000 C CNN
+F 1 "Polyfuse 500mA" V 4700 1150 50  0000 C CNN
 F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 4650 950 50  0001 L CNN
 F 3 "" H 4600 1150 50  0001 C CNN
 	1    4600 1150
@@ -761,7 +759,7 @@ L Polyfuse F2
 U 1 1 5AEFF88A
 P 5550 4700
 F 0 "F2" V 5450 4700 50  0000 C CNN
-F 1 "Polyfuse" V 5650 4700 50  0000 C CNN
+F 1 "Polyfuse 200mA" V 5650 4700 50  0000 C CNN
 F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_HandSoldering" H 5600 4500 50  0001 L CNN
 F 3 "" H 5550 4700 50  0001 C CNN
 	1    5550 4700
@@ -814,4 +812,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 4900 5550 4900
 Connection ~ 5550 4900
+Text GLabel 2300 1400 2    60   Input ~ 0
+Edge_D3
 $EndSCHEMATC
