@@ -1,5 +1,0 @@
-(fp_lib_table
-  (lib (name "Acorn Cartridge edge-connector")(type KiCad)(uri "$(KIPRJMOD)/Acorn Cartridge edge-connector.pretty")(options "")(descr ""))
-  (lib (name Logo)(type KiCad)(uri "$(KIPRJMOD)/Logo.pretty")(options "")(descr ""))
-  (lib (name MouseBite)(type KiCad)(uri "$(KIPRJMOD)/MouseBite.pretty")(options "")(descr ""))
-)
